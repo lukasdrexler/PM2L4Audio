@@ -7,6 +7,6 @@ x_sin = sin(FREQ*2*pi*n);
 x_cos = cos(FREQ*2*pi*n);
 
 subplot(1,2,1);
-spectrogram(x_sin, 'yaxis')
+spectrogram(x_sin,[],[],[],SAMPLING_RATE, 'yaxis')
 subplot(1,2,2);
-spectrogram(x_cos, 'yaxis')
+spectrogram(x_cos,[],[],[],SAMPLING_RATE, 'yaxis')
